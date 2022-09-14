@@ -1,11 +1,12 @@
 import '../css/Counter.css';
+import React, { Component } from 'react';
 
-function Counter({clickNumbers}) {
-  return (
-    <div className='counter'>
-      {clickNumbers}
-    </div>
-  );
+export default class Counter extends Component {
+  render() {
+    return (
+      <div className='counter'>
+        {this.props.clickNumbers}
+      </div>
+    );
+  }
 }
-
-export default Counter;
